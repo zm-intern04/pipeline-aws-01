@@ -10,7 +10,7 @@ terraform {
     organization = "zmware"
 
     workspaces {
-      name = "demo-yt-tf"
+      name = "pipeline-aws-01"
     }
   }
 }
