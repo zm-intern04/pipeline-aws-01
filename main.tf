@@ -5,6 +5,7 @@ provider "aws" {
 }
 variable "access_key" {}
 variable "secret_key" {}
+variable "token_terraform" {}
 terraform {
   backend "remote" {
     organization = "zmware"
@@ -12,6 +13,7 @@ terraform {
     workspaces {
       name = "pipeline-aws-01"
     }
+    token = var.token_terraform
   }
 }
 
