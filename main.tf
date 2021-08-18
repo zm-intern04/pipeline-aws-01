@@ -9,7 +9,6 @@ variable "secret_key" {}
 terraform {
   backend "remote" {
     organization = "zmware"
-
     workspaces {
       name = "pipeline-aws-01"
     }
